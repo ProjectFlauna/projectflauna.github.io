@@ -1,10 +1,7 @@
 body,
 html {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -93,7 +90,7 @@ h1 {
     background-color: rgb(5, 5, 5, .05);
     padding: 2%;
     border-radius: 2%;
-    position: fixed;
+    position: absolute;
     top: 30%;
     right: 10%;
     font-size: 200%;
@@ -111,9 +108,43 @@ h1 {
     margin: 5px;
 }
 
-@media only screen and (max-width: 768px) {
-    /* for mobile phones */
+
+/*@media only screen and (max-width: 768px) {
+    /* for mobile phones 
     [class*="col-"] {
         width: 100%;
     }
+}
+*/
+
+.imgLeenheerenpolder {
+    width: 600px;
+    margin-top: 150px;
+    margin-left: 150px;
+    border-radius: 2%;
+}
+
+.imgProject {
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 2%;
+}
+
+.logo {
+    position: absolute;
+    top: -10px;
+    right: 47%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    background-color: rgb(5, 5, 5, .05);
+    padding: 2%;
+    border-radius: 2%;
+    font-size: 200%;
 }
