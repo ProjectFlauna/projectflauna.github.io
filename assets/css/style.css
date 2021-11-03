@@ -4,6 +4,10 @@ html {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -90,10 +94,14 @@ h1 {
     background-color: rgb(5, 5, 5, .05);
     padding: 2%;
     border-radius: 2%;
+    border: 2px;
     position: absolute;
     top: 30%;
     right: 10%;
     font-size: 200%;
+    width: 550px;
+    word-wrap: strict;
+    z-index: 1;
 }
 
 #main {
@@ -107,15 +115,6 @@ h1 {
     height: 10px;
     margin: 5px;
 }
-
-
-/*@media only screen and (max-width: 768px) {
-    /* for mobile phones 
-    [class*="col-"] {
-        width: 100%;
-    }
-}
-*/
 
 .imgLeenheerenpolder {
     width: 600px;
@@ -137,6 +136,25 @@ h1 {
     right: 47%;
 }
 
+.information {
+    background-color: rgb(156, 140, 140, .1);
+    padding: 1%;
+}
+
+.containerInformation {
+    position: absolute;
+    margin-top: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.containerLayout {
+    display: flex;
+    flex-shrink: 3;
+    flex-grow: 5;
+}
+
 .footer {
     display: flex;
     align-items: center;
@@ -147,4 +165,72 @@ h1 {
     padding: 2%;
     border-radius: 2%;
     font-size: 200%;
+}
+
+.green {
+    color: green;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.orange {
+    color: orange;
+    font-size: 90%;
+}
+
+.yellow {
+    color: yellowgreen;
+    font-size: 100%;
+}
+
+.limegreen {
+    color: limegreen;
+    font-size: 110%;
+    font-weight: bolder;
+}
+
+.red {
+    color: tomato;
+    font-size: 80%;
+}
+
+.darkRed {
+    color: red;
+    font-size: 70%;
+}
+
+@media only screen and (max-width: 500px) {
+    /*or mobile phones*/
+    .imgProject {
+        width: 80%;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2%;
+        display: block;
+    }
+    .logo {
+        display: block;
+        margin-right: -40px;
+        top: -10px;
+    }
+    .containerLayout {
+        background-color: rgb(5, 5, 5, .05);
+        padding: 2%;
+        margin-left: -20px;
+        font-size: medium;
+        text-overflow: ellipsis;
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        background-color: rgb(5, 5, 5, .05);
+        padding: 2%;
+        border-radius: 2%;
+        font-size: 200%;
+        margin-top: 200px;
+    }
 }
