@@ -31,6 +31,7 @@ h1 {
     left: 0px;
     right: 0px;
     top: 0px;
+    z-index: 10;
 }
 
 .topBarButton {
@@ -90,7 +91,7 @@ h1 {
     background-color: rgb(156, 140, 140);
 }
 
-.introText {
+.introTextp {
     background-color: rgb(5, 5, 5, .05);
     padding: 2%;
     border-radius: 2%;
@@ -99,21 +100,31 @@ h1 {
     top: 30%;
     right: 10%;
     font-size: 200%;
-    width: 550px;
-    word-wrap: strict;
     z-index: 1;
 }
 
-#main {
-    transition: margin-left .5s;
-    padding: 0px;
-    z-index: 10;
+.introTexts {
+    background-color: rgb(5, 5, 5, .05);
+    padding: 2%;
+    border-radius: 2%;
+    border: 2px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    font-size: 200%;
+    z-index: 1;
 }
 
-#main nav li span {
-    color: white;
-    height: 10px;
-    margin: 5px;
+.introTexti {
+    background-color: rgb(5, 5, 5, .05);
+    padding: 2%;
+    border-radius: 2%;
+    border: 2px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    font-size: 200%;
+    z-index: 1;
 }
 
 .imgLeenheerenpolder {
@@ -125,46 +136,55 @@ h1 {
 
 .imgProject {
     width: 600px;
-    margin-top: 100px;
+    margin-top: 186px;
     margin-left: 100px;
     border-radius: 2%;
 }
 
 .logo {
-    position: absolute;
-    top: -10px;
+    position: fixed;
+    width: 60px;
+    height: auto;
     right: 47%;
 }
 
 .information {
-    background-color: rgb(156, 140, 140, .1);
-    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 3%;
+    position: relative;
+    z-index: 1;
 }
 
 .containerInformation {
     position: absolute;
-    margin-top: 10%;
+    left: 45%;
+    right: 5%;
+    margin-top: 50%;
     margin-right: 5%;
     margin-left: 5%;
-    width: 90%;
+    max-width: 90%;
 }
 
 .containerLayout {
-    display: flex;
-    flex-shrink: 3;
-    flex-grow: 5;
+    position: absolute;
+    right: 10%;
+    top: 20%;
 }
 
 .footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-size: cover;
     background-color: rgb(5, 5, 5, .05);
-    padding: 2%;
+    padding: 0.5%;
     border-radius: 2%;
     font-size: 200%;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 3;
+    flex-grow: 5;
 }
 
 .green {
@@ -199,7 +219,16 @@ h1 {
     font-size: 70%;
 }
 
-@media only screen and (max-width: 500px) {
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@media only screen and (max-width: 1050px) {
     /*or mobile phones*/
     .imgProject {
         width: 80%;
@@ -211,8 +240,9 @@ h1 {
     }
     .logo {
         display: block;
-        margin-right: -40px;
-        top: -10px;
+        margin-right: -30px;
+        width: 50px;
+        height: auto;
     }
     .containerLayout {
         background-color: rgb(5, 5, 5, .05);
@@ -232,5 +262,26 @@ h1 {
         border-radius: 2%;
         font-size: 200%;
         margin-top: 200px;
+    }
+    .introTextp {
+        width: 76.2%;
+        margin-top: 40%;
+    }
+    .introTexts {
+        width: 76.2%;
+        margin-top: 40%;
+    }
+    .introTexti {
+        width: 76.2%;
+        margin-top: 40%;
+    }
+    .introText h1 {
+        font-size: 30px;
+    }
+    .containerInformation h1 {
+        font-size: 140%;
+    }
+    .containerInformation p {
+        font-size: 90%;
     }
 }
