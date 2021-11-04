@@ -91,7 +91,7 @@ h1 {
     background-color: rgb(156, 140, 140);
 }
 
-.introTextp {
+.introText-p {
     background-color: rgb(5, 5, 5, .05);
     padding: 2%;
     border-radius: 2%;
@@ -103,7 +103,7 @@ h1 {
     z-index: 1;
 }
 
-.introTexts {
+.introText-s {
     background-color: rgb(5, 5, 5, .05);
     padding: 2%;
     border-radius: 2%;
@@ -115,7 +115,7 @@ h1 {
     z-index: 1;
 }
 
-.introTexti {
+.introText-i {
     background-color: rgb(5, 5, 5, .05);
     padding: 2%;
     border-radius: 2%;
@@ -129,15 +129,23 @@ h1 {
 
 .imgLeenheerenpolder {
     width: 600px;
-    margin-top: 150px;
+    margin-top: 210px;
     margin-left: 150px;
     border-radius: 2%;
 }
 
 .imgProject {
-    width: 600px;
-    margin-top: 186px;
+    width: 500px;
+    margin-top: 135px;
     margin-left: 100px;
+    border-radius: 2%;
+}
+
+.imgSteels {
+    width: 700px;
+    height: auto;
+    margin-top: 210px;
+    margin-left: 150px;
     border-radius: 2%;
 }
 
@@ -148,8 +156,25 @@ h1 {
     right: 47%;
 }
 
+.zeelenbergLogo {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    left: 50%;
+    right: 50%;
+    margin-top: 1%;
+}
+
+.QRCode {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    width: 60px;
+    height: auto;
+}
+
 .information {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(5, 5, 5, .05);
     padding: 3%;
     position: relative;
     z-index: 1;
@@ -157,12 +182,10 @@ h1 {
 
 .containerInformation {
     position: absolute;
-    left: 45%;
-    right: 5%;
-    margin-top: 50%;
+    margin-top: 10%;
     margin-right: 5%;
     margin-left: 5%;
-    max-width: 90%;
+    width: 90%;
 }
 
 .containerLayout {
@@ -171,20 +194,15 @@ h1 {
     top: 20%;
 }
 
-.footer {
+footer {
     position: absolute;
     bottom: 0%;
     left: 0%;
     right: 0%;
     background-size: cover;
-    background-color: rgb(5, 5, 5, .05);
-    padding: 0.5%;
+    background-color: black;
     border-radius: 2%;
     font-size: 200%;
-    display: flex;
-    justify-content: center;
-    flex-shrink: 3;
-    flex-grow: 5;
 }
 
 .green {
@@ -251,27 +269,27 @@ h1 {
         font-size: medium;
         text-overflow: ellipsis;
     }
-    .footer {
+    footer {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         margin: 0;
-        background-color: rgb(5, 5, 5, .05);
+        background-color: black;
         padding: 2%;
         border-radius: 2%;
         font-size: 200%;
         margin-top: 200px;
     }
-    .introTextp {
+    .introText-p {
         width: 76.2%;
         margin-top: 40%;
     }
-    .introTexts {
+    .introText-s {
         width: 76.2%;
         margin-top: 40%;
     }
-    .introTexti {
+    .introText-i {
         width: 76.2%;
         margin-top: 40%;
     }
