@@ -91,7 +91,7 @@ h1 {
     background-color: rgb(156, 140, 140);
 }
 
-.introText-p {
+.introText {
     background-color: rgb(5, 5, 5, .05);
     padding: 2%;
     border-radius: 2%;
@@ -103,7 +103,7 @@ h1 {
     z-index: 1;
 }
 
-.introText-s {
+.introTextP {
     background-color: rgb(5, 5, 5, .05);
     padding: 2%;
     border-radius: 2%;
@@ -111,11 +111,11 @@ h1 {
     position: absolute;
     top: 30%;
     right: 10%;
-    font-size: 200%;
+    font-size: 150%;
     z-index: 1;
 }
 
-.introText-i {
+.introTextA {
     background-color: rgb(5, 5, 5, .05);
     padding: 2%;
     border-radius: 2%;
@@ -123,13 +123,14 @@ h1 {
     position: absolute;
     top: 30%;
     right: 10%;
-    font-size: 200%;
+    font-size: 150%;
     z-index: 1;
+    margin-right: 10%;
 }
 
 .imgLeenheerenpolder {
     width: 600px;
-    margin-top: 210px;
+    margin-top: 195px;
     margin-left: 150px;
     border-radius: 2%;
 }
@@ -144,8 +145,16 @@ h1 {
 .imgSteels {
     width: 700px;
     height: auto;
-    margin-top: 210px;
+    margin-top: 200px;
     margin-left: 150px;
+    border-radius: 2%;
+}
+
+.imgFlauna {
+    width: 250px;
+    height: auto;
+    margin-top: 200px;
+    margin-left: 350px;
     border-radius: 2%;
 }
 
@@ -157,20 +166,19 @@ h1 {
 }
 
 .zeelenbergLogo {
-    position: absolute;
     width: 60px;
     height: auto;
-    left: 50%;
-    right: 50%;
-    margin-top: 1%;
 }
 
 .QRCode {
-    position:fixed;
-    bottom:0px;
-    right:0px;
+    position: relative;
     width: 60px;
     height: auto;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
 }
 
 .information {
@@ -200,9 +208,10 @@ footer {
     left: 0%;
     right: 0%;
     background-size: cover;
-    background-color: black;
     border-radius: 2%;
     font-size: 200%;
+    display: flex;
+    justify-content: center;
 }
 
 .green {
@@ -246,7 +255,7 @@ footer {
     width: device-width;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1024px) {
     /*or mobile phones*/
     .imgProject {
         width: 80%;
@@ -256,10 +265,35 @@ footer {
         border-radius: 2%;
         display: block;
     }
+    .imgLeenheerenpolder {
+        width: 80%;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2%;
+        display: block;
+    }
+    .imgSteels {
+        width: 80%;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2%;
+        display: block;
+    }
+    .imgFlauna {
+        width: 50%;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2%;
+        display: block;
+    }
     .logo {
         display: block;
-        margin-right: -30px;
-        width: 50px;
+        margin-right: -22px;
+        margin-top: 5px;
+        width: 42px;
         height: auto;
     }
     .containerLayout {
@@ -269,37 +303,48 @@ footer {
         font-size: medium;
         text-overflow: ellipsis;
     }
-    footer {
+    .footer {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         margin: 0;
-        background-color: black;
         padding: 2%;
         border-radius: 2%;
         font-size: 200%;
-        margin-top: 200px;
+        /* margin-top: 200px; */
     }
-    .introText-p {
+    .introText {
         width: 76.2%;
-        margin-top: 40%;
+        margin-top: 30%;
+        font-size: 15px;
     }
-    .introText-s {
+    .introTextP {
         width: 76.2%;
-        margin-top: 40%;
+        margin-top: 57%;
+        font-size: 15px;
     }
-    .introText-i {
-        width: 76.2%;
-        margin-top: 40%;
+    .introTextA {
+        width: 50%;
+        margin-top: 57%;
+        font-size: 15px;
     }
-    .introText h1 {
-        font-size: 30px;
+    .containerInformation {
+        margin-top: 80%;
     }
     .containerInformation h1 {
         font-size: 140%;
     }
     .containerInformation p {
         font-size: 90%;
+    }
+    .introductionText {
+        margin-top: 20x;
+    }
+    .introText h1 {
+        text-align: center;
+    }
+    .zeelenbergLogo {
+        margin-left: -32px;
     }
 }
