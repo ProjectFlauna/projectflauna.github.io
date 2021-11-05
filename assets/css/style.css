@@ -159,6 +159,7 @@ h1 {
 }
 
 .logo {
+    margin-top: 8px;
     position: fixed;
     width: 56px;
     height: auto;
